@@ -2,8 +2,8 @@ package Lesson5_Task2;
 
 public class Hdd {
     String modelName;
-    int memoryValue;
-    boolean isInternalType;
+    private int memoryValue;
+    private boolean isInternalType;
 
     // Создаём конструкторы по умолчанию и со всеми полями
     public Hdd() {

@@ -1,8 +1,8 @@
 package Lesson5_Task2;
 
 public class Ram {
-    String modelName;
-    int memoryValue;
+    private String modelName;
+    private int memoryValue;
 
     // Создаём конструкторы по умолчанию и со всеми полями
     public Ram() {

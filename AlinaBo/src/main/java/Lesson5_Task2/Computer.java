@@ -2,8 +2,8 @@ package Lesson5_Task2;
 
 public class Computer {
 
-    double price;
-    String model;
+    private double price;
+    private String model;
 
     Ram ram = new Ram();
     Hdd hdd = new Hdd();
