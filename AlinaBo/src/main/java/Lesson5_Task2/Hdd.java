@@ -1,7 +1,7 @@
 package Lesson5_Task2;
 
 public class Hdd {
-    String modelName;
+    private String modelName;
     private int memoryValue;
     private boolean isInternalType;
 

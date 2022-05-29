@@ -4,23 +4,27 @@ public class Computer {
 
     private double price;
     private String model;
+    private Ram ram;
+    private Hdd hdd;
 
-    Ram ram = new Ram();
-    Hdd hdd = new Hdd();
 
     public Computer(double price, String model) {
-        this.price = price;
-        this.model = model;
-    }
-
-    public Computer(double price, String model, Ram ram, Hdd hdd) {
         this.price = price;
         this.model = model;
         this.ram = new Ram();
         this.hdd = new Hdd();
     }
 
-    public void printInfo( ) {
+    public Computer(double price, String model, String ramModelName, int ramMemoryValue, String hddModelName, int hddMemoryValue, boolean isInternalType) {
+        this.price = price;
+        this.model = model;
+        this.ram = new Ram(ramModelName, ramMemoryValue);
+        this.hdd = new Hdd(hddModelName, hddMemoryValue, isInternalType);
+    }
+
+    public void printInfo() {
         System.out.println("Computer price: " + price + "\nComputer model: " + model);
+        ram.printInfo();
+        hdd.printInfo();
     }
 }

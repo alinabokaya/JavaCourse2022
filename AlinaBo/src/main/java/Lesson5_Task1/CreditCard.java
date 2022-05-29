@@ -13,12 +13,16 @@ public class CreditCard {
 
     // Создаём метод, который позволяет начислять сумму на кредитную карточку
     public void addMoneyToAccount(long amount) {
-        this.accountBalance = this.accountBalance + amount;
+        if (amount<0) {
+            System.out.println("Неверный ввод!");
+        } else accountBalance = accountBalance + amount;
     }
 
     // Создаём метод, который позволяет снимать с карточки некоторую сумму
     public void moneyWithdrawal(long amount) {
-        this.accountBalance = this.accountBalance - amount;
+        if (accountBalance >= amount) {
+            accountBalance = accountBalance - amount;
+        } else System.out.println("Недостаточно средств!\n");
     }
 
     // Добавляем метод, который выводит текущую информацию о карточке

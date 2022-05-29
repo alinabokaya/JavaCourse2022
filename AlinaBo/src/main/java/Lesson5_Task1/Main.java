@@ -9,9 +9,9 @@ public class Main {
         CreditCard creditCard2 = new CreditCard("B123B45609786", 57);
         CreditCard creditCard3 = new CreditCard("C123B45609786", 89);
 
-        creditCard1.addMoneyToAccount(40);
+        creditCard1.addMoneyToAccount(-10);
         creditCard2.addMoneyToAccount(13);
-        creditCard3.moneyWithdrawal(79);
+        creditCard3.moneyWithdrawal(90);
 
         creditCard1.printAccountInfo();
         creditCard2.printAccountInfo();
