@@ -87,7 +87,7 @@ public class Computer {
 
             if (enteredNumber == 0 || enteredNumber == 1) {
                 isCorrectInput = true;
-            } else System.out.println("Incorrect input range!");
+            } else System.out.println("Incorrect input range! Please try again!");
         } while (!isCorrectInput);
 
         return enteredNumber;
