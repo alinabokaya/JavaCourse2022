@@ -8,7 +8,6 @@ public class Task3 {
     // вывести в консоль сам элемент и сколько раз он встречается
 
     public static void main(String[] args) {
-        //List<Integer> list1 = new ArrayList();
 
         Integer[] integers = new Integer[100];
         Random random = new Random();
